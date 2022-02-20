@@ -22,11 +22,11 @@ Publish the website in the given URL.
 
 
 
-PROGRAM :
+## PROGRAM:
 
-area.html :
+## area.html :
 
-area.html :
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -93,7 +93,7 @@ area.html :
 </body>
 </html>
 
-views.py :
+## views.py :
 
 def areacalculation(request):
     context ={}
@@ -110,7 +110,7 @@ def areacalculation(request):
         context['h']=h
     return render(request,"mathapp/area.html",context)
     
-urls.py :
+## urls.py :
 
 from django.contrib import admin
 from django.urls import path
