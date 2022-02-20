@@ -26,6 +26,7 @@ PROGRAM :
 
 area.html :
 
+area.html :
 <!DOCTYPE html>
 <html>
 <head>
@@ -94,8 +95,6 @@ area.html :
 
 views.py :
 
-from django.shortcuts import render
-
 def areacalculation(request):
     context ={}
     context["area"]='0'
@@ -111,7 +110,6 @@ def areacalculation(request):
         context['h']=h
     return render(request,"mathapp/area.html",context)
     
-    
 urls.py :
 
 from django.contrib import admin
@@ -119,11 +117,10 @@ from django.urls import path
 from mathapp import views
 
 urlpatterns = [
-path('admin/', admin.site.urls),
-path('areaoftriangle/',views.areacalculation,name="areaoftriangle"),
-path('',views.areacalculation,name="areaoftriangleroot")
+    path('admin/', admin.site.urls),
+    path('areaoftriangle/',views.areacalculation,name="areaoftriangle"),
+    path('',views.areacalculation,name="areaoftriangleroot")
 ]
-
 
 ## OUTPUT:
 
