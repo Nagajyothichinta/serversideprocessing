@@ -125,10 +125,6 @@ path('',views.areacalculation,name="areaoftriangleroot")
 ]
 
 
-Publish the website in the given URL.
-
-
-
 ## OUTPUT:
 
 <img width="863" alt="n1" src="https://user-images.githubusercontent.com/94191344/154849299-9b16b7a8-6263-4a3a-955b-2115d5ad5b96.png">
